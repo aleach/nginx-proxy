@@ -10,3 +10,4 @@ RUN touch /etc/apt/sources.list.d/sources.list  && \
     && apt-get clean
 
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY proxy-x-host.conf /etc/nginx/conf.d/1-proxy-x-host.conf
